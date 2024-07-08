@@ -1,0 +1,48 @@
+.main_headset {
+  margin: 0px auto;
+  margin-top: -255px;
+}
+
+
+.play-pausebutton {
+  position: absolute;
+transform: translate(0, -300px);
+  right: 85px;
+  cursor: pointer;
+  
+}
+
+
+.upper_headset {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  height: 100%;
+  margin-top: 20px;
+}
+
+.left_headset img {
+  height: 804px;
+  width: 659px;
+}
+.right_headset img {
+  height: 804px;
+  width: 659px;
+}
+
+.lower_headset {
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  width: 100%;
+  align-items: center;
+}
+
+.lower_headset > video {
+  height: 100vh;
+  width: 92%;
+  object-fit: cover; 
+  margin: auto;
+ 
+}

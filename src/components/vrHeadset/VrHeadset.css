@@ -1,0 +1,63 @@
+.main_content{
+   text-align: center;
+   padding-top: 100px;
+   padding-bottom: 100px;
+   overflow-x: hidden;
+}
+
+
+.vr_logo{
+    margin-bottom: 100px;
+}
+
+
+
+.vr_img{
+    margin-bottom: 100px;
+    transition: transform 0.1s ease-out;
+  
+}
+
+
+.vr_img:hover{
+
+transform: scale(1.01) rotate(5deg);
+
+
+}
+
+
+
+
+
+
+
+
+.vr_button {
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 25px;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    outline: none;
+    font-size: 19px;
+    line-height: 1.2105263158;
+    font-weight: 600;
+    letter-spacing: .012em;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.vr_button .plus-icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.vr_button:hover {
+    background-color: black;
+    color: white;
+}

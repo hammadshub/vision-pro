@@ -1,0 +1,70 @@
+.hero_section {
+  background-color: #ffffff;
+  text-align: center;
+  position: relative;
+  height: 670px;
+}
+
+#myVideo {
+  height: 670px;
+  width: 670px;
+}
+
+.play-pause-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.hero_text {
+  transform: translateY(-190px);
+}
+
+.hero_logo img {
+  width: 314px;
+}
+
+.hero_text h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #6e6e73;
+  margin-bottom: 12px;
+}
+
+.hero_text a {
+  font-size: 22px;
+  line-height: 1.2105263158;
+  font-weight: 600;
+  letter-spacing: 0.012em;
+  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  color: #f86f24;
+  text-decoration: none;
+}
+
+/* .hero_text a:hover {
+    border-bottom: 2px solid #f86f24;
+    
+  }
+  
+
+.hero_text::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 37%;
+  width: 25%;
+  border-bottom: 2px solid #f86f24;
+} */
+
+.hero_text a:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 1px;
+  left: 42%;
+  width: 14.5%;
+  border-bottom: 2px solid #f86f24;
+}
+
+

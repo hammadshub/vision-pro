@@ -1,24 +1,24 @@
-import logo from './logo.svg';
+
 import './App.css';
+import AppControls from './components/appControl';
+import HeadSet from './components/headSet';
+import HeroSection from './components/heroSection';
+import Photos_videos from './components/photo_videos';
+import VisionPro from './components/visionPro';
+import VrHeadset from './components/vrHeadset';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <HeroSection />
+      <VisionPro />
+      <VrHeadset />
+      <AppControls/>
+      <Photos_videos/>
+      <HeadSet />
     </div>
+
   );
 }
 
