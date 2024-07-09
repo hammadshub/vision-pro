@@ -41,9 +41,9 @@ const HeadSet = () => {
         </video>
         <div className="play-pausebutton" onClick={handlePlayPausee}>
         {isPlaying ? (
-          <PauseSvg fill="#ffffff"/>
+          <PauseSvg fill="#bcbcc4"/>
         ) : (
-          <PlaySvg fill="#ffffff" />
+          <PlaySvg fill="#bcbcc4" />
         )}
       </div>
       </div>

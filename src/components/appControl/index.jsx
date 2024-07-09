@@ -25,16 +25,18 @@ const AppControls = () => {
   return (
     <div className="app-container">
       <div className="app_video">
+        
         <video ref={videoRef} autoPlay muted loop id="my3Video">
           <source src={medium} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        <div className="playpause-button" onClick={handlePlayPauses}>
-          {isPlaying ? <PauseSvg fill="#6e6e73" /> : <PlaySvg fill="#6e6e73" />}
-        </div>
+      
       </div>
 
       <div className="scroll_Over">
+      <div className="playpause-button" onClick={handlePlayPauses}>
+          {isPlaying ? <PauseSvg fill="#bcbcc4" /> : <PlaySvg fill="#bcbcc4" />}
+        </div>
         <h3>Apps</h3>
         <h1>
           Let your apps be free as free as

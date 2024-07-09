@@ -5,6 +5,18 @@
 }
 
 
+
+.playpausebutton {
+    position: absolute;
+    top: -220px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1;
+ 
+  }
+  
+
+
 .bg__video > video{
     width: 100%;
     height: 100vh;
