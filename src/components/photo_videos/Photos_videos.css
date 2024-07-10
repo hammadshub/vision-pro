@@ -1,59 +1,150 @@
-.videos_container{
-    overflow-x: hidden;
-    text-align: center;
-    margin-top: -240px;
+.videos_container {
+  overflow-x: hidden;
+  text-align: center;
+  margin-top: -140px;
 }
-
-
 
 .playpausebutton {
-    position: absolute;
-    top: -220px;
-    right: 20px;
-    cursor: pointer;
-    z-index: 1;
- 
-  }
-  
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1;
+}   
 
-
-.bg__video > video{
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
+.bg__video > video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
-
-.bg__video{
-    position: relative;
-    z-index: -1;
+.bg__video {
+  position: relative;
+  z-index: -1;
 }
 
-
-.scroll__Over{
-    color: white;
-    transform: translate(0,-500px);
+.scroll__Over {
+  color: white;
+  transform: translate(0, -500px);
   text-align: center;
+}
+
+.scroll__Over h3 {
+  font-size: 24px;
+  line-height: 1.1666666667;
+  font-weight: 700;
+  letter-spacing: 0.009em;
    
 }
 
-
-
- 
-.scroll__Over h3{
-    font-size: 24px;
-    line-height: 1.1666666667;
-    font-weight: 700;
-    letter-spacing: .009em;
-    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+.scroll__Over h1 {
+  margin-top: 12px;
+  font-size: 75px;
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -0.015em;
 }
 
 
-.scroll__Over h1{
-    margin-top: -12px;
-font-size: 75px;
-line-height: 1.05;
-font-weight: 700;
-letter-spacing: -0.015em;
-font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@media (max-width: 1035px) {
+  .playpausebutton{
+    position: absolute;
+    top: -110px;
+  }
+
+}
+
+
+
+@media (max-width: 670px) {
+
+    .videos_container {
+        overflow-x: hidden;
+        text-align: center;
+        margin-top: -210px;
+      }
+
+
+  .bg__video > video {
+    height: 90vh;
+    width: 100%;
+  }
+
+  .playpausebutton svg {
+    height: 70%;
+    width: 70%;
+    transform: translate(20px,55px)
+  }
+
+  .scroll__Over h3 {
+    font-size: 23px;
+    line-height: 1.1666666667;
+    font-weight: 700;
+    letter-spacing: 0.009em;
+    padding-top: 35px;
+    margin-bottom: 10px;
+  }
+
+  .scroll__Over h1 {
+    margin-top: 38px;
+    font-size: 55px;
+    line-height: 1.05;
+    font-weight: 600;
+  }
+}
+
+
+@media (max-width: 500px)
+{
+
+  .playpause-button svg{
+  transform: translate(22px,170px);
+  height: 53%;
+  width:53%;
+}
+
+.scroll_Over{
+ 
+   transform: translateY(-500px);
+ 
+}
+
+.app_video > video{
+  height: 80vh;
+  width:100%;
+
+}
+
+.scroll__Over h3 {
+  font-size: 20px;
+ 
+}
+
+.scroll__Over h1 {
+  margin-top: 28px;
+  font-size: 45px;
+  line-height: 1.05;
+  font-weight: 600;
+}
+
+
+
+}
+
+
+
+@media (max-width: 430px){
+
+  .playpause-button svg{
+    transform: translate(22px,70px);
+    height: 53%;
+    width:53%;
+  }
+
+  .scroll_Over{
+ 
+    transform: translateY(100px);
+  
+ }
+ 
 }

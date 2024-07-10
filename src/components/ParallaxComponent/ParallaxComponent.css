@@ -1,0 +1,67 @@
+
+
+
+.video-section {
+  scroll-behavior: smooth;
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-section > video{
+ 
+}
+
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100vh;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+}
+
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.textbg {
+  background-color: #313534;
+  padding: 20px;
+  color: white;
+}
+
+.section {
+  padding: 50px 80px;
+  text-align: center;
+  text-align: justify;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.control-button {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 1;
+}

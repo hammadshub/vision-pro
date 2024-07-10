@@ -1,13 +1,14 @@
 .hero_section {
-  background-color: #ffffff;
   text-align: center;
   position: relative;
-  height: 670px;
+  height: 100vh;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 #myVideo {
-  height: 670px;
-  width: 670px;
+  height: 100vh;
+  max-width: 670px;
 }
 
 .play-pause-button {
@@ -18,11 +19,12 @@
 }
 
 .hero_text {
-  transform: translateY(-190px);
+transform: translate(-2px,-180px);
+ 
 }
 
 .hero_logo img {
-  width: 314px;
+  max-width: 314px;
 }
 
 .hero_text h2 {
@@ -30,6 +32,7 @@
   font-weight: 600;
   color: #6e6e73;
   margin-bottom: 12px;
+  margin-top: 3px;
 }
 
 .hero_text a {
@@ -37,8 +40,6 @@
   line-height: 1.2105263158;
   font-weight: 600;
   letter-spacing: 0.012em;
-  font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
-    sans-serif;
   color: #f86f24;
   text-decoration: none;
 }
@@ -62,9 +63,123 @@
   content: "";
   position: absolute;
   bottom: 1px;
-  left: 42%;
-  width: 14.5%;
+  left: 42.5%;
+  width: 13.5%;
   border-bottom: 2px solid #f86f24;
 }
 
 
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .play-pause-button svg{
+    height: 35px;
+    width: 35px;
+  
+    }
+    
+
+
+    #myVideo {
+      height: 100vh;
+      max-width: 100%;
+    }
+
+  }
+
+
+
+
+
+/* @media (max-width: 670px) {
+  .hero_section {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #myVideo {
+    height: 670px;
+    width: 530px;
+    max-width: auto;
+  }
+
+  .hero_logo img {
+    width: 50%;
+  }
+
+  .hero_text h2 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #6e6e73;
+    margin-bottom: 12px;
+    margin-top: 8px;
+  }
+
+  .hero_text a {
+    font-size: 20px;
+    line-height: 1.2105263158;
+    font-weight: 600;
+    letter-spacing: 0.012em;
+    color: #f86f24;
+    text-decoration: none;
+  }
+
+  .hero_text a:hover::after {
+    display: none;
+  }
+
+  .play-pause-button svg {
+    height: 70%;
+    width: 70%;
+    transform: translate(20px, -10px);
+  }
+}
+
+@media (max-width: 530px) {
+  #myVideo {
+    height: 670px;
+    width: 502px;
+    max-width: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  #myVideo {
+    height: 670px;
+    width: 472px;
+    max-width: auto;
+  }
+}
+
+@media (max-width: 472px) {
+  #myVideo {
+    height: 670px;
+    width: 430px;
+  }
+
+  .play-pause-button svg {
+    height: 53%;
+    width: 53%;
+    transform: translate(25px, -11px);
+  }
+} */
+
+/* @media (max-width: 430px) {
+  
+  #myVideo {
+    height: 620px;
+    width: 392px;
+   
+    
+  }
+    
+  
+} */

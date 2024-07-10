@@ -23,7 +23,7 @@ const HeadSet = () => {
   };
 
   return (
-    <div className="main_headset">
+    <div className="main_headset main-responsive">
       <div className="upper_headset">
         <div className="left_headset">
           <img src={Left_headset} alt="" />

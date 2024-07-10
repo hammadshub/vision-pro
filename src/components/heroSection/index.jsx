@@ -19,7 +19,7 @@ const HeroSection = () => {
   };
  
   return (
-    <div className="hero_section">
+    <div className="hero_section main-responsive ">
       <video ref={videoRef} autoPlay muted loop id="myVideo">
         <source src={visionpro} type="video/mp4" />
         Your browser does not support the video tag.

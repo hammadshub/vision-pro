@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState  } from "react";
-import "./VisionPro.css";
+import styles from "./VisionPro.module.css";
 import applevision from "../../assets/videos/applevision.mp4";
 import PlaySvg from "../../assets/svg/PlaySvg";
 import PauseSvg from "../../assets/svg/PauseSvg";
@@ -16,7 +16,7 @@ const VisionPro = () => {
       const backgroundVideo = document.getElementById("my2Video");
 
       if (backgroundVideo) {
-        backgroundVideo.style.transform = `translate(0%, calc(10% + ${
+        backgroundVideo.style.transform = `translate(0%, calc(0% + ${
           scrollPosition * 0.5
         }px))`;
       }
@@ -41,9 +41,9 @@ const VisionPro = () => {
   };
 
   return (
-    <div className="visionpro">
-      <div className="applevisionvideo">
-        <div className="playypausebutton" onClick={handlePlayPausebtn}>
+    <div className= {styles.visionpro}>
+      <div className={styles.applevisionvideo}>
+        <div className={styles.playypausebutton} onClick={handlePlayPausebtn}>
         {isPlaying ? (
           <PauseSvg fill="#d1d1d3"/>
         ) : (
@@ -55,8 +55,8 @@ const VisionPro = () => {
           Your browser does not support the video tag.
         </video>
       </div>
-      <div className="scrollOver">
-        <div className="scrollText">
+      <div className={styles.scrollOver}>
+        <div className={styles.scrollText}>
           <p>
             The Apple Vision Pro seamlessly combines <br />
             digital content with your surroundings.
@@ -74,7 +74,7 @@ const VisionPro = () => {
 
         <a
           href="https://www.apple.com/de/apple-vision-pro/"
-          className="play-button"
+          className={styles.playButton}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

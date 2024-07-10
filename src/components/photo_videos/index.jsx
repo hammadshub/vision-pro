@@ -22,21 +22,21 @@ const Photos_videos = () => {
 
   return (
 
-    <div className="videos_container">
+    <div className="videos_container main-responsive">
       <div className="bg__video">
         <video ref={videoRef} autoPlay muted loop id="my5Video">
           <source src={large} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-        
+        <div className="playpausebutton" onClick={handlePlayPausess}>
+          {isPlaying ? <PauseSvg fill="#bcbcc4" /> : <PlaySvg fill="#bcbcc4" />}
+        </div>
       </div>
 
       <div className="scroll__Over">
           <h3>Photos and videos</h3>
           <h1>Experiencing the moment.<br/>Again and again.</h1>
-          <div className="playpausebutton" onClick={handlePlayPausess}>
-          {isPlaying ? <PauseSvg fill="#bcbcc4" /> : <PlaySvg fill="#bcbcc4" />}
-        </div>
+         
         </div>
       </div>
     

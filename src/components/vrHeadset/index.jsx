@@ -8,7 +8,7 @@ import visionpro from "../../assets/images/vision-pro.png";
 const VrHeadset = () => {
    
   return (
-    <div className='main_content'>
+    <div className='main_content main-responsive'>
 
       <div className="vr_logo">
         <img src={visionpro} alt="" />

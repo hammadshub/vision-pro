@@ -1,0 +1,50 @@
+/* ParallaxEntertainment.css */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color: #ccc;
+}
+
+.video-container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.parallax-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+}
+
+.scrolling-text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+}
+
+.playback-control {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
